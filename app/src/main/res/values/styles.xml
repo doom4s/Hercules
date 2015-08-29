@@ -2,7 +2,6 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="BasicTheme" />
-
     <!-- inherit from the material theme -->
     <style name="BasicTheme" parent="android:Theme.Material.NoActionBar">
         <!-- Main theme colors -->
