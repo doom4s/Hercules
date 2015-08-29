@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maric.vlajko.hercules.AppActivity">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:src="@drawable/background"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:background="#FFFFFF"
+            android:id="@+id/addNumber1"
+            android:textColor="#000000"
+            android:text="Neki tekst"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:background="#FFFFFF"
+            android:id="@+id/addNumber2"
+            android:textColor="#000000"
+            android:text="Neki tekst DVA"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:background="#607D8B"
+            android:id="@+id/screenTitle"
+            android:textColor="#FFFFFF"
+            android:text="NASLOV"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculate"
+            android:text="Calculate"
+            android:layout_margin="10dp"
+            android:layout_alignTop="@+id/addNumber2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:weightSum="32"
+        android:background="#B0BEC5">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="32"
+            >
+            <ImageView
+                android:src="@drawable/leaf"
+                android:layout_weight="6"
+                android:layout_width="60dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/text1"
+                android:layout_weight="7"
+                android:text="Neki tekst"
+                />
+
+            <ImageView
+                android:src="@drawable/leaf"
+                android:layout_weight="6"
+                android:layout_width="60dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/text2"
+                android:layout_weight="7"
+                android:text="Neki tekst"
+                />
+
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="32"
+            >
+            <ImageView
+                android:src="@drawable/leaf"
+                android:layout_weight="6"
+                android:layout_width="60dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/text3"
+                android:layout_weight="7"
+                android:text="Neki tekst"
+                />
+
+            <ImageView
+                android:src="@drawable/leaf"
+                android:layout_weight="6"
+                android:layout_width="60dp"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="15dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:id="@+id/text4"
+                android:layout_weight="7"
+                android:text="Neki tekst"
+                />
+
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            />
+    </LinearLayout>
+</RelativeLayout>

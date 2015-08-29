@@ -1,31 +1,30 @@
 package com.maric.vlajko.hercules;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.MenuItem;
 
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import roboguice.activity.RoboActivity;
 import roboguice.inject.ContentView;
-import roboguice.inject.InjectView;
 
-@ContentView(R.layout.activity_main)
-public class MainActivity extends RoboActivity {
-    private final int SPLASH_DISPLAY_LENGTH = 1000;
+@ContentView (R.layout.activity_app)
+public class AppActivity extends RoboActivity {
 
-    @InjectView (R.id.hello_text)
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Intent intent = new Intent(this, AppActivity.class);
-        this.startActivity(intent);
-
-
-
-
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_app, menu);
+        return true;
+    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
