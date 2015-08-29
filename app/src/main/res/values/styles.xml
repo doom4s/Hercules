@@ -1,9 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="BasicTheme" >
-
-    </style>
+    <style name="AppTheme" parent="BasicTheme" />
 
     <!-- inherit from the material theme -->
     <style name="BasicTheme" parent="android:Theme.Material.NoActionBar">
