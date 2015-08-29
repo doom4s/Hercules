@@ -2,14 +2,17 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.maric.vlajko.hercules.AppActivity">
-
+    <include android:id="@id/toolBar"
+        layout="@layout/toolbar_layout"
+        />
 
     <ImageView
         android:id="@+id/backgroundImage"
         android:src="@drawable/background"
         android:scaleType="fitXY"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:contentDescription="@string/autum_image_desc" />
     <RelativeLayout
         android:background="#FFFFFF"
         android:layout_width="match_parent"

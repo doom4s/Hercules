@@ -1,9 +1,9 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="BasicTheme" />
+   <!-- <style name="AppTheme" parent="BasicTheme" />-->
     <!-- inherit from the material theme -->
-    <style name="BasicTheme" parent="android:Theme.Material.NoActionBar">
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
         <item name="android:colorPrimary">#607D8B</item>
@@ -11,6 +11,10 @@
         <item name="android:colorPrimaryDark">#263238</item>
         <!--   theme UI controls like checkboxes and text fields -->
         <item name="android:colorAccent">#EF6C00</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/primary_text_default_material_dark</item>
     </style>
 
 </resources>
