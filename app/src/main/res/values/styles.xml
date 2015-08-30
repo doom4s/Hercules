@@ -1,9 +1,9 @@
 <resources>
 
     <!-- Base application theme. -->
-   <!-- <style name="AppTheme" parent="BasicTheme" />-->
+   <style name="AppTheme" parent="BasicTheme" />
     <!-- inherit from the material theme -->
-    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+    <style name="BasicTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
         <item name="android:colorPrimary">#607D8B</item>

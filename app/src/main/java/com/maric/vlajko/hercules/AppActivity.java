@@ -2,21 +2,24 @@ package com.maric.vlajko.hercules;
 
 
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import roboguice.activity.RoboActivity;
+
+import roboguice.activity.RoboActionBarActivity;
 import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
 
 @ContentView (R.layout.activity_app)
-public class AppActivity extends RoboActivity {
+public class AppActivity extends RoboActionBarActivity {
 
 
 
-
+@InjectView  (R.id.toolBar) Toolbar tolToolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+     setSupportActionBar(tolToolbar);
     }
 
     @Override
