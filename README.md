@@ -10,5 +10,5 @@ Since there is more consuting to do in regards what should be the main calculati
 Bare in mind that UI is not done yet, colors positioning and there are fragments to be done.
 
 
-Here is debug apk.
+Here is a signed debug apk.
 http://tinyurl.com/npa7aak
