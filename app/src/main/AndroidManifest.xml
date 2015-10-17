@@ -16,7 +16,7 @@
 
         <provider
             android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider1692686454293479"
+            android:authorities="@string/face_code"
             android:exported="true" />
 
         <activity

@@ -99,8 +99,9 @@ public class RecordsFragment extends RoboFragment implements AdapterView.OnItemS
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        crateGraph(view, Integer.parseInt(spinner.getSelectedItem().toString()), Integer.parseInt(mSpinner.getSelectedItem().toString()));
-
+        if(spinner!=null) {
+            crateGraph(view, Integer.parseInt(spinner.getSelectedItem().toString()), Integer.parseInt(mSpinner.getSelectedItem().toString()));
+        }
 
     }
 
@@ -121,7 +122,7 @@ public class RecordsFragment extends RoboFragment implements AdapterView.OnItemS
         if(parent.getId()==mSpinner.getId())
         {
             Toast.makeText(getActivity().getApplicationContext(), "Selected <|> month", Toast.LENGTH_SHORT).show();
-            plot.setTitle(monthArray[Integer.parseInt(mSpinner.getSelectedItem().toString())-1]);
+            plot.setTitle(monthArray[Integer.parseInt(mSpinner.getSelectedItem().toString()) - 1]);
             plot.redraw();
         }
        /* if(view.equals(mSpinner)){
