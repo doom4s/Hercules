@@ -8,3 +8,7 @@ Aplication offers login via facebook, for this purpouse facebook ID is hidded an
 
 Since there is more consuting to do in regards what should be the main calculations of the app, database is not normalized for now.
 Bare in mind that UI is not done yet, colors positioning and there are fragments to be done.
+
+
+Here is debug apk.
+http://tinyurl.com/npa7aak
