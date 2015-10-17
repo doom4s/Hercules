@@ -1,192 +1,97 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.DrawerLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:theme="@style/BasicTheme"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.maric.vlajko.hercules.AppActivity">
-    <include android:id="@+id/toolBar"
-        layout="@layout/toolbar_layout"
-        />
+    android:elevation="7sp"
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:id="@+id/backgroundImage"
-        android:src="@drawable/background"
-        android:scaleType="fitXY"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/autum_image_desc" />
-    <RelativeLayout
-        android:background="#FFFFFF"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_above="@+id/bottomLayout"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+<FrameLayout
+    android:id="@+id/fragmentholder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-        <TextView
-            android:background="#FFFFFF"
-            android:id="@+id/addNumber1"
-            android:textColor="#000000"
-            android:text="Neki tekst"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            />
-        <TextView
-            android:background="#FFFFFF"
-            android:id="@+id/addNumber2"
-            android:textColor="#000000"
-            android:text="Neki tekst DVA"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:paddingLeft="10dp"
-            android:paddingTop="2dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="10dp" />
+</FrameLayout>
 
-        <TextView
-            android:background="#607D8B"
-            android:id="@+id/screenTitle"
-            android:textColor="#FFFFFF"
-            android:text="NASLOV"
-            android:paddingLeft="10dp"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/calculate"
-            android:text="Calculate"
-            android:layout_margin="10dp"
-            android:layout_alignTop="@+id/addNumber2"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-    </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/bottomLayout"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:elevation="4dp"
+        android:id="@+id/drawerlist"
+        android:layout_width="290dp"
+        android:background="#B6B6B6"
         android:orientation="vertical"
-        android:weightSum="32"
-        android:background="#B0BEC5">
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"
-            android:orientation="horizontal"
-            android:weightSum="32"
-            >
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:background="#000"
+            android:layout_height="130dp">
             <ImageView
-                android:src="@drawable/leaf"
-                android:layout_weight="6"
-                android:layout_width="60dp"
-                android:scaleType="fitCenter"
-                android:layout_marginLeft="15dp"
-                android:layout_height="60dp" />
-
+                android:id="@+id/coverImage"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stardust"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp" />
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:elevation="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/profileImage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:siBorderWidth="3dp"
+                app:siBorderColor="#FFF"
+                app:siArrowPosition="right"
+                app:siSquare="true"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:id="@+id/text1"
-                android:layout_weight="7"
-                android:text="Neki tekst"
-                />
+                android:layout_below="@+id/profileImage"
+                android:id="@+id/userName"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="#FFF"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
 
-            <ImageView
-                android:src="@drawable/leaf"
-                android:layout_weight="6"
-                android:layout_width="60dp"
-                android:scaleType="fitCenter"
-                android:layout_marginLeft="15dp"
-                android:layout_height="60dp" />
+        </RelativeLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="#000"></LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:id="@+id/text2"
-                android:layout_weight="7"
-                android:text="Neki tekst"
-                />
-
-
-        </LinearLayout>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"
-            android:orientation="horizontal"
-            android:weightSum="32"
-            >
-            <ImageView
-                android:src="@drawable/leaf"
-                android:layout_weight="6"
-                android:layout_width="60dp"
-                android:scaleType="fitCenter"
-                android:layout_marginLeft="15dp"
-                android:layout_height="60dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:id="@+id/text3"
-                android:layout_weight="7"
-                android:text="Neki tekst"
-                />
-
-            <ImageView
-                android:src="@drawable/leaf"
-                android:layout_weight="6"
-                android:layout_width="60dp"
-                android:scaleType="fitCenter"
-                android:layout_marginLeft="15dp"
-                android:layout_height="60dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:id="@+id/text4"
-                android:layout_weight="7"
-                android:text="Neki tekst"
-                />
-
-        </LinearLayout>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="4"
-            />
     </LinearLayout>
-</RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000"></LinearLayout>
+        <ListView
+            android:id="@+id/optionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000"></LinearLayout>
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

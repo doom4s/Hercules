@@ -3,7 +3,58 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="front_title">ХЕРКУЛ</string>
+    <string name="facebook_app_id">1692686454293479</string>
+    <string name="front_title">Hercules</string>
+    <string name="calculate">Calculate</string>
+    <string name="facebook_login">Login with facebook</string>
     <string name="title_activity_app">AppActivity</string>
     <string name="autum_image_desc">Autum</string>
+    <string name="title_activity_front">FrontActivity</string>
+    <string name="buton1text">Units per day:</string>
+    <string name="buton2text">Target glycemia:</string>
+    <string name="buton3text">UH faktor 1j:</string>
+    <string name="buton4text">Glikemija pre jela:</string>
+    <string name="buton5text">Planirani unos UH u gr:</string>
+    <string name="buton6text">Aktivni insulin:</string>
+    <string name="buton7text">Bazal j/h u trenutku davanja:</string>
+    <string name="correction_dose">Correction dose:</string>
+    <string name="settings">Settings</string>
+    <string name="history">Records</string>
+    <string name="home">Home</string>
+    <string name="calculate_text">Calculate insulin intake.</string>
+    <string-array name="planets">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Plut</item>
+    </string-array>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_records_swipe">RecordsSwipe</string>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string name="days">Days</string>
+    <string name="level">Level</string>
+    <string name="month">"Month"</string>
+
 </resources>
